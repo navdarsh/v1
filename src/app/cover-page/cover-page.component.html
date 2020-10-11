@@ -1,0 +1,46 @@
+<div class="container">
+
+  <div class="hero_container">
+    <div class="background"></div>
+
+    <div class="data_container">
+      <h3 class="animated_line">Precisa de <span>Motoboy ?</span></h3>
+      <h2 class = "head">MOTOBOY.APP</h2>
+      <div class="tagline">Do you need to deliver or collect? Simulate your <br>freight below, very practical and safe!</div>
+      <div class="button_container"><button>SIMULATE YOUR FREIGHT NOW</button></div>
+    </div>
+  </div>
+
+  <div class="order_making_process">
+    <div class="heading">How Motoboy.app works</div>
+    <div class="circles">
+      <app-circles></app-circles>
+      <app-circles></app-circles>
+    </div>
+    <div class="cards-container">
+      <div class="card" *ngFor="let card of cards">
+        <div class="icon"><i [class] = "card.icon"></i></div>
+        <div class="name">{{card.name}}</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="categories">
+    <div class="icon"><i class="fas fa-sort-down"></i></div>
+    <div class="category" *ngFor="let detail of details">
+      <div class="image"><img [src]="detail.img" alt=""></div>
+      <div class="details_container" >
+        <div class="circles_container"><app-circles></app-circles></div>
+        <div class="detail_head">{{detail.heading}}</div>
+        <div class="detail_text">{{detail.text}}</div>
+        <div class="know_more"><button (click) = "routeTo(detail.route)">know more</button></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="connecting">
+    <!-- <div class="background_image"><img src="assets/images/map1.png" alt=""></div> -->
+    <div class="image"><img src="assets/images/logo_motoboy_app_2.png" alt=""></div>
+    <div class="text">Connecting Brazil from end to end.</div>
+  </div>
+</div>

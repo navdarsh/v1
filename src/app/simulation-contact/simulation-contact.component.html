@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="simulation">
+    <div class="heading">Make a free simulation</div>
+    <div class="text">Our system finds the motorcycle courier closest to the starting address of your</div>
+    <div class="text">ticket, very fast, practical and safe.</div>
+    <div class="button"><button>Make a Simulation now</button></div>
+  </div>
+  <div class="contact">
+    <div class="inner_contacts">
+      <div class="logo"><img src="assets/images/motoboy-app-app-rodape-logo-1.png" alt=""></div>
+
+      <div class="nav">
+        <div class="links">
+          <div class="head">Quick Links</div>
+          <div class="item" *ngFor="let link of links"><a *ngFor="let item of link" class = "link" [routerLink]="item.route" >{{item.name}}</a></div>
+        </div>
+
+        <div class="images">
+          <div class="img"><img src="assets/images/motoboyapp-google-play.png" alt=""></div>
+          <div class="img"><img src="assets/images/motoboyapp-app-store-apple.png" alt=""></div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+  <div class="copyright">©Motoboy.app 2019 - All rights reserved.</div>
+</div>

@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="background"></div>
+  <div class="inner_container">
+    <div class="logo"><img src="assets\images\logo.png" alt=""></div>
+    <div class="nav">
+      <a routerLink="">Personal use</a>
+      <a routerLink="">Companies</a>
+      <a routerLink="">E-commerce</a>
+      <a routerLink="">Restaurants</a>
+      <a routerLink="">Couriers</a>
+    </div>
+    <a class = "download_button">Download App</a>
+    <div class="menu_container">
+      <i class="far fa-user menu_icon"></i>
+      <div class="menu">
+        <div class="item" *ngFor="let item of menu">{{item.name}}</div>
+      </div>
+    </div>
+  </div>
+</div>

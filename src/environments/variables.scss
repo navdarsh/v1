@@ -1,0 +1,12 @@
+$orange: #E6971E;
+
+
+
+
+
+
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

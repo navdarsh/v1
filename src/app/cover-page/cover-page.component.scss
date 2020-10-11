@@ -1,0 +1,219 @@
+@import "../../environments/variables.scss";
+.hero_container {
+  height: 90vh;
+  width: 100%;
+  position: relative;
+  font-family: sans-serif;
+  flex-direction: column;
+  @include center;
+  .background {
+    background: $orange;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -2;
+    opacity: .9;
+  }
+  .data_container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    h3 {
+      font-size: 45px;
+      line-height: 80px;
+      color: #000;
+      max-width: 730px;
+      margin: 0;
+      margin-bottom: 10px;
+      letter-spacing: 0;
+      font-weight: bold;
+    }
+    h2 {
+      font-size: 65px;
+      color: #000;
+      max-width: 730px;
+      margin: 0;
+      margin-bottom: 20px;
+      letter-spacing: 0;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    .tagline {
+      font-size: 26px;
+      line-height: 40px;
+      max-width: 650px;
+      color: #000;
+      margin: 0;
+      font-weight: 400;
+      margin-bottom: 30px;
+      letter-spacing: 0.8px;
+    }
+    button{
+      padding: 13px 18px;
+      background: black;
+      white-space: nowrap;
+      color: white;
+      font-size: 1.25rem;
+      line-height: 1.5;
+      border-radius: 0.3rem;
+      border: none;
+      &:hover {
+        background: $orange;
+        color: black;
+      }
+    }
+  }
+}
+.order_making_process {
+  padding: 70px 0;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  border-bottom: 2px solid $orange;
+  .heading {
+    font-size: 34px;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 0;
+    letter-spacing: 2px;
+    color: #000000;
+    margin: 0;
+    padding-bottom: 15px;
+  }
+  .circles {
+    display: flex;
+    margin-bottom: 30px;
+    margin-top: 10px;
+  }
+  .cards-container {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+
+    .card {
+      color: #fff;
+      text-align: center;
+      padding: 23px 15px;
+      background-color: #ffc90d;
+      box-shadow: 1px 0px 37px 0px rgba(0,0,0,0.27);
+      width: 29%;
+      flex-direction: column;
+      @include center;
+      i {
+        font-size: 50px;
+        margin: 0 0 24px;
+        color: #000;
+      }
+      .name {
+        font-size: 23px;
+        font-weight: 500;
+        line-height: 1.2;
+        @include center;
+      }
+    }
+  }
+}
+.categories {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  align-items: center;
+  padding: 70px 0;
+  position: relative;
+  font-family: sans-serif;
+  .category {
+    width: 70%;
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: space-between;
+    align-items: center;
+    &:nth-child(even) .image{
+      order: 2;
+    }
+    &:nth-child(odd) .details_container{
+      order: 2;
+    }
+    .image {
+      max-width: 50%;
+      // padding-right: 15px;
+      display: flex;
+      align-items: center;
+      order: 1;
+
+      img {
+        width: 90%;
+      }
+    }
+    .details_container {
+      width: 45%;
+
+      display: flex;
+      flex-direction: column;
+
+      .circles_container {
+        margin-bottom: 30px;
+        margin-top: 10px;
+      }
+    }
+    .detail_head {
+      font-size: 35px;
+      font-weight: bold;
+      margin: 0 0 16px;
+    }
+    .detail_text {
+      font-size: 18px;
+      margin-bottom: 26px;
+      font-weight: 500;
+    }
+    button {
+      // border-color: #000;
+      background: #000;
+      color: #fff;
+      padding: 9px 15px;
+      font-weight: 600;
+      font-size: 16px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      &:hover {
+        background: $orange;
+        color: #000;
+      }
+    }
+  }
+
+  .icon {
+    color: $orange;
+    display: flex;
+    width: 100%;
+    margin-top: -18px;
+    font-size: 30px;
+    @include center;
+    position: absolute;
+    top: 0;
+  }
+}
+
+.connecting {
+  padding: 70px 0;
+  background-color: #ffc90d;
+  background-image: url('../../assets/images/map1.png');
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  font-size: 35px;
+  font-weight: bold;
+  font-family: sans-serif;
+  // max-width: 1140px;
+  .text {
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    line-height: 1.2;
+  }
+}
