@@ -1,5 +1,5 @@
 <div class="container">
-  <div class="background"></div>
+  <!-- <div class="background"></div>
   <div class="inner_container">
     <div class="logo"><img src="assets\images\logo.png" alt=""></div>
     <div class="nav">
@@ -14,6 +14,39 @@
       <i class="far fa-user menu_icon"></i>
       <div class="menu">
         <div class="item" *ngFor="let item of menu">{{item.name}}</div>
+      </div>
+    </div>
+  </div> -->
+
+  <div class="row headerContainer background">
+    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 inner_container">
+      <div class="row">
+          <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2">
+            <div class="logo"><img src="assets\images\logo.png" alt=""></div>
+          </div>
+
+          <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6">
+            <div class="nav">
+              <a routerLink="">Personal use</a>
+              <a routerLink="">Companies</a>
+              <a routerLink="">E-commerce</a>
+              <a routerLink="">Restaurants</a>
+              <a routerLink="">Couriers</a>
+            </div>
+          </div>
+
+          <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2">
+            <a class = "download_button">Download App</a>
+          </div>
+
+          <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2">
+            <div class="menu_container">
+              <i class="far fa-user menu_icon"></i>
+              <div class="menu">
+                <div class="item" *ngFor="let item of menu">{{item.name}}</div>
+              </div>
+            </div>
+          </div>
       </div>
     </div>
   </div>
